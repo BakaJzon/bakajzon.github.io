@@ -51,12 +51,10 @@ jobs:
           # Deprecated. Use node-version instead. Will not be supported after October 1, 2019
           #version: # optional
           
-      - name: Setup my env
-        run: |
-          npm install hexo-cli
-          npm install
-          git submodule init
-          git submodule update
+     # - name: Setup my env
+        # run: |
+         # npm install hexo-cli
+         # npm install
           
       - name: Generate pages
         run: npm run build
