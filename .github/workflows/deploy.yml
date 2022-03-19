@@ -51,15 +51,13 @@ jobs:
           # Deprecated. Use node-version instead. Will not be supported after October 1, 2019
           #version: # optional
           
-     # - name: Setup my env
-        # run: |
-         # npm install hexo-cli
-         # npm install
+      - name: Initialize Hexo
+         run: |
+           npm install hexo-cli
+           npm i
           
       - name: Generate pages
-        run: |
-          npm install hexo-cli
-          npm run build
+        run: npm run build
         
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
