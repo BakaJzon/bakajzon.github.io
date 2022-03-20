@@ -52,7 +52,7 @@ jobs:
           #version: # optional
           
       - name: Initialize Hexo
-         run: |
+        run: |
            npm install hexo-cli
            npm i
           
